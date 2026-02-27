@@ -60,7 +60,9 @@ Functional Requirements (FR)
 --FR5. El sistema debe permitir registrar facturas contables manualmente (gasto o ingreso).
 --FR6. El sistema debe mostrar un reporte de ganancias y pérdidas por rango de fecha.
 --FR7. El sistema debe generar un historial de movimientos por producto.
-# 10 Non-Functional Requirements (NFR) 
+## Diagrama de Contexto
+
+```mermaid
 flowchart LR
     Admin[Administrador]
     Inventario[Encargado de Inventario]
@@ -72,6 +74,7 @@ flowchart LR
     Inventario -->|Registra productos y conciliaciones| Sistema
     Contador -->|Registra facturas| Sistema
     Sistema -->|Genera| Reportes
-    Sistema -->|Muestra estado de| Admin 
+    Sistema -->|Muestra estado| Admin
+
     
 
